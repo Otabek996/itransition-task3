@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Otabek996/itransition-task3/issues"
   },
-  "homepage": "https://github.com/Otabek996/itransition-task3#readme"
+  "homepage": "https://github.com/Otabek996/itransition-task3#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "eslint": "^9.1.1",
+    "globals": "^15.0.0"
+  }
 }
