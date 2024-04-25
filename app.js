@@ -1,10 +1,12 @@
 // Task 3
 import Key from "./classes/key.js";
+import Menu from "./classes/menu.js";
 
 class App {
-  constructor(move) {
-    this.move = move;
-    this.key = new Key(move);
+  constructor(actions) {
+    this.actions = actions;
+    this.key = new Key(actions);
+    this.menu = new Menu(actions);
   }
 
   async loading() {
@@ -16,6 +18,7 @@ class App {
   async startGame() {
     const { key, compMove, hmac } = this.key.update();
     console.log(`HMAC: ${hmac} \n`);
+    this.menu.display();
   }
 }
 
