@@ -8,12 +8,14 @@ class App {
   }
 
   async loading() {
-    const loaderTitle = "Loading game ...";
+    const loaderTitle = "Loading game ... \n";
     console.log(loaderTitle);
+    this.startGame();
   }
 
   async startGame() {
-    const { hmac, compMove, key } = this.key.update();
+    const { key, compMove, hmac } = this.key.update();
+    console.log(`HMAC: ${hmac} \n`);
   }
 }
 
