@@ -11,6 +11,10 @@ class App {
     const loaderTitle = "Loading game ...";
     console.log(loaderTitle);
   }
+
+  async startGame() {
+    const { hmac, compMove, key } = this.key.update();
+  }
 }
 
 export default App;
