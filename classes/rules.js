@@ -1,5 +1,5 @@
 // Rules
-
+import colors from "colors";
 class Rules {
   constructor(actions) {
     this.actions = actions;
@@ -18,11 +18,11 @@ class Rules {
         );
 
         if (index > 0) {
-          tableArray[i].push("Win");
+          tableArray[i].push(colors.brightGreen("Win"));
         } else if (index < 0) {
-          tableArray[i].push("Lose");
+          tableArray[i].push(colors.brightRed("Lose"));
         } else {
-          tableArray[i].push("Draw");
+          tableArray[i].push(colors.brightYellow("Draw"));
         }
       }
     }
