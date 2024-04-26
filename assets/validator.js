@@ -1,7 +1,8 @@
 // Validator
 
 export const isUnique = (array) => {
-  new Set(array).size == array.length;
+  const uniqueArray = new Set(array).size == array.length;
+  return uniqueArray;
 };
 
 export const validateArgs = (args) => {

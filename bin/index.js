@@ -1,7 +1,7 @@
 // Index
 import { argv } from "node:process";
 import App from "../app.js";
-import { validateArgs } from "../helpers/helpers.js";
+import { validateArgs } from "../assets/validator.js";
 
 const main = () => {
   const actions = argv.slice(2);

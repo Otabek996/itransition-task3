@@ -32,6 +32,7 @@ class App {
     const { key, compMove, hmac } = this.key.update();
     console.log(`HMAC: ${hmac} \n`);
     this.menu.display();
+    await this.makePrompt(compMove, key);
   }
 
   async makePrompt(compMove, key) {
@@ -44,7 +45,7 @@ class App {
     const answer = Number(answers.player_move);
 
     if (answer === 0) {
-      console.log("LOL");
+      exit();
     } else if (answer === this.actions.length + 1) {
       await help(this.table);
       (await playAgain()) ? this.startGame() : exit();
