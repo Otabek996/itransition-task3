@@ -13,7 +13,9 @@ class Rules {
 
     for (let i = 0; i < tableLength; i++) {
       for (let j = 0; j < tableLength; j++) {
-        index = Math.sign(((j - i + tableIndex + tableLength) % tableLength) - tableIndex);
+        index = Math.sign(
+          ((j - i + tableIndex + tableLength) % tableLength) - tableIndex
+        );
 
         if (index > 0) {
           tableArray[i].push("Win");
