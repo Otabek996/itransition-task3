@@ -10,7 +10,7 @@ const moveOn = async (result, key) => {
   }
 
   console.log(`HMAC key: ${key}`);
-  console.log("You can use online tools to validate computer move.");
+  console.log("You can use online tools to validate computer move. For instance: (https://www.freeformatter.com/hmac-generator.html)");
 };
 
 export default moveOn;
