@@ -18,7 +18,7 @@ export const validateArgs = (args) => {
     console.log(error.message);
   } else if (args.length % 2 === 0) {
     const error = Error(
-      "Please enter the odd number of arguments.\nExample: 'play rock Spock paper lizard scissors'"
+      "Please enter the odd number of arguments.\nExample: 'rock paper scissors'"
     );
     console.log(error.message);
   } else return true;
