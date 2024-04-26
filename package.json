@@ -27,6 +27,7 @@
     "globals": "^15.0.0"
   },
   "dependencies": {
-    "cli-table3": "^0.6.4"
+    "cli-table3": "^0.6.4",
+    "inquirer": "^9.2.19"
   }
 }
