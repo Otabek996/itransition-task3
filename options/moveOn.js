@@ -2,9 +2,9 @@
 import colors from "colors";
 
 const moveOn = async (result, key) => {
-  if (result === "Win") {
+  if (result === colors.brightGreen("Win")) {
     console.log(colors.brightGreen("You win!\n"));
-  } else if (result === "Lose") {
+  } else if (result === colors.brightRed("Lose")) {
     console.log(colors.brightRed("You lose!\n"));
   } else {
     console.log(colors.brightYellow("It is a draw!\n"));
