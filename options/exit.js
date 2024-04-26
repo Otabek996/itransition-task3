@@ -1,7 +1,7 @@
 // Exit
 
 const exit = async () => {
-  console.log("Good bye");
+  console.log("The end");
 };
 
 export default exit;
