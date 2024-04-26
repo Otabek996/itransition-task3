@@ -1,16 +1,19 @@
 // Move on
+import colors from "colors";
 
 const moveOn = async (result, key) => {
   if (result === "Win") {
-    console.log("You win!\n");
+    console.log(colors.brightGreen("You win!\n"));
   } else if (result === "Lose") {
-    console.log("You lose!\n");
+    console.log(colors.brightRed("You lose!\n"));
   } else {
-    console.log("It is a draw!\n");
+    console.log(colors.brightYellow("It is a draw!\n"));
   }
 
-  console.log(`HMAC key: ${key}`);
-  console.log("You can use online tools to validate computer move. For instance: (https://www.freeformatter.com/hmac-generator.html)");
+  console.log(colors.bgBrightGreen(` HMAC key: ${key} `));
+  console.log(
+    "You can use online tools to validate computer move. For instance: (https://www.freeformatter.com/hmac-generator.html)"
+  );
 };
 
 export default moveOn;

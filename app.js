@@ -1,5 +1,6 @@
 // Task 3
 import inquirer from "inquirer";
+import colors from "colors";
 
 // Import classes
 import Key from "./classes/key.js";
@@ -24,13 +25,13 @@ class App {
 
   async loading() {
     const loaderTitle = "Loading game ... \n";
-    console.log(loaderTitle);
+    console.log(colors.brightGreen(loaderTitle));
     this.startGame();
   }
 
   async startGame() {
     const { key, compMove, hmac } = this.key.update();
-    console.log(`HMAC: ${hmac} \n`);
+    console.log(colors.bgBrightGreen(` HMAC: ${hmac} \n`));
     this.menu.display();
     await this.makePrompt(compMove, key);
   }
