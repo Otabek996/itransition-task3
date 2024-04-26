@@ -6,7 +6,7 @@ export const isUnique = (array) => {
 };
 
 export const validateArgs = (args) => {
-  const example = "Example: 'play rock Spock paper lizard scissors'";
+  const example = "Example: 'rock paper scissors'";
 
   if (args.length < 3) {
     const error = Error(`Please provide at least 3 arguments.\n${example}`);
